@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>Cards Maker</title>
+</head>
+<body>
+
+<div class="wrap">
+    <!--主页面编辑-->
+    <div class="edit">
+        <div class="preview">
+            <img id="previewAvatar" src="src/img/main.png">
+            <div class="text-box">
+                <div>Name</div>
+                <div>1</div>
+                <div>Description</div>
+            </div>
+        </div>
+        <div class="add-text" id="addText">
+            <input type="text" class="text" placeholder="Name">
+            <input type="text" class="text" placeholder="Number">
+            <input type="text" class="text" placeholder="Description">
+        </div>
+
+
+        <div class="up-save">
+            <input type="file" id="file" class="upload" accept="image/*;capture=camera">
+            <ul>
+                <li id="upload"><i class="icon-image"></i><span>&nbsp;&nbsp;Choose Avatar</span></li>
+                <li id="save"><i class="icon-checkbox-checked"></i><span>&nbsp;&nbsp;save</span></li>
+            </ul>
+        </div>
+    </div>
+    <!--截图页面-->
+    <div class="clip">
+        <div class="clip-box">
+            <div id="clipArea"></div>
+        </div>
+        <button id="clipBtn">OK</button>
+        <div id="view"></div>
+    </div>
+    <!--保存页面-->
+    <div class="saved">
+        <div class="saveImg">
+            <img id="saved" src="src/img/main.png">
+        </div>
+        <div class="msg">Long-Press to save this picture</div>
+        <ul class="bas">
+            <li class="back"><i class="icon-reply"></i><span>&nbsp;&nbsp;back</span></li>
+            <li class="download"><i class="icon-download3"></i><span>&nbsp;&nbsp;download</span></li>
+            <li class="share"><i class="icon-share"></i><span>&nbsp;&nbsp;share</span></li>
+        </ul>
+    </div>
+    <!--分享页面-->
+    <div class="shareBox">
+        <div class="wrap">
+            <div class="itemBox">
+                <a class="Facebook">
+                    <img src="src/img/facebook.png">
+                    <div>Facebook</div>
+                </a>
+                <a class="Twitter">
+                    <img src="src/img/twitter.png">
+                    <div>Twitter</div>
+                </a>
+                <a class="Reddit" id="copy-share-link-reddit">
+                    <img src="src/img/reddit.png">
+                    <div>Reddit</div>
+                </a>
+                <a class="CopyLink" id="copy-share-link-lower">
+                    <img src="src/img/copylink.png">
+                    <div>Copy Link</div>
+                </a>
+            </div>
+            <div class="close">
+                <img src="src/img/close.png">
+            </div>
+        </div>
+    </div>
+    <!--&lt;!&ndash;loading页面&ndash;&gt;-->
+    <div class="loading">
+        <div class="loading_main">
+            <img src="src/img/loading.gif">
+        </div>
+    </div>
+</div>
+</body>
+</html>
