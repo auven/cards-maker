@@ -376,7 +376,7 @@ function save(text1, text2, text3) {
     images.src = hasAvatar;
 
     var shuiyin = new Image();
-    shuiyin.src = './img/watermark.png';
+    shuiyin.src = require('./img/watermark.png');
 
     images.onload = function () {
         ctx.drawImage(images, 0, 0);
